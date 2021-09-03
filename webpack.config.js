@@ -28,12 +28,9 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        loader: 'url-loader',
-        options: {
-          publicPath: './src/fonts/',
-          name: '../fonts/[name][ext]',
-          limit: 1000,
+        test: /\.(woff|woff2)$/,
+        use: {
+          loader: 'url-loader',
         },
       },
     ],

@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-  margin: 0.5em 2em 1.5em 1em;
+  margin: 0.5em 2em 1.5em 2em;
   color: #f4266b;
   font-size: 50px;
 }
@@ -35,8 +35,8 @@ h1 {
 .float-child {
   width: 48%;
   float: left;
-  padding: 2em; /* stylelint-disable-next-line */
-  height: fit-content;
+  padding: 2em;
+  height: fit-content; /* stylelint-disable-line */
   border-radius: 10px;
   background-color: rgba(6, 12, 20, 0.8);
 }
@@ -58,9 +58,8 @@ h1 {
 }
 
 #submit {
-  background: url('https://icons8.com/icon/17465/triforce');
   margin-top: 10px;
-  background-color: rgba(32, 91, 115, 1);
+  background: rgba(32, 91, 115, 1);
 }
 
 .badge-primary {
