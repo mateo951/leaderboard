@@ -89,6 +89,9 @@ h3 {
 ul {
   width: 100%;
   margin-top: 20px;
+  height: 460px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 ul li {
@@ -97,6 +100,33 @@ ul li {
   margin: 0;
   display: block;
   color: #205b73;
+}
+
+.scroll {
+  height: 25vh;
+  overflow: scroll;
+}
+
+#loading {
+  width: 2rem;
+  height: 2rem;
+  float: right;
+  margin-right: 1em;
+  visibility: hidden;
+  animation: spin 2s infinite linear;
+}
+
+#loading.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to { /* stylelint-disable-line */
+    transform: rotate(359deg);
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -109,11 +139,14 @@ ul li {
 
   body {
     overflow-y: scroll;
-    height: auto;
   }
 
   h1 {
     margin: auto;
     padding: 30px;
+  }
+
+  ul {
+    height: 155px;
   }
 }

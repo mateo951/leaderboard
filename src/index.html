@@ -21,6 +21,7 @@
       <!-- <br>
       <br>
       <br> -->
+      <img src="https://img.icons8.com/color-glass/96/ffffff/triforce.png" id="loading" alt="Loading Icon"/>
       <div class="leaderboardContainer">
         <ul class="list-group">
         </ul>
@@ -29,8 +30,8 @@
     <div class="float-child">
       <h3>Add your Scores</h3>
       <form class="highscoreInput">
-        <input class="form-control" type="text" placeholder="Your Name" required>
-        <input class="form-control" type="number" placeholder="Your Score" required>
+        <input class="form-control" name="player" type="text" placeholder="Your Name" required maxlength="30"/>
+        <input class="form-control" name="score" type="number" min="1" max="999"  placeholder="Your Score" required/>
         <button type="submit" id="submit" class="btn btn-info">Submit</button>
       </form>
     </div>

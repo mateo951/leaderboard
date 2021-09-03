@@ -5,4 +5,8 @@ export default class Utilities {
     }
     return true;
   }
+
+  static resetElement = (element) => {
+    element.innerHTML = '';
+  }
 }

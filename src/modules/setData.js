@@ -1,3 +1,5 @@
+import retrieveData from './retrieveData.js';
+
 const setData = async (user, score, apiURL) => fetch(apiURL, {
   method: 'POST',
   body: JSON.stringify({ user, score }),
@@ -6,6 +8,8 @@ const setData = async (user, score, apiURL) => fetch(apiURL, {
   },
 })
   .then((response) => response.json())
-  .then((json) => json);
+  .then(() => {
+    retrieveData(apiURL);
+  });
 
 export default setData;
