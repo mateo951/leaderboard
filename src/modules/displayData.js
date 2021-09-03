@@ -3,10 +3,9 @@ const displayData = (data) => {
   const { result } = data;
 
   listItems.innerHTML = '';
-  result.forEach(item => {
+  result.forEach((item) => {
     listItems.innerHTML += `<li class="list-group-item">${item.user}: <span class="floatRight badge badge-primary badge-pill">${item.score}</span></li>`;
   });
-
 
 //   list.innerHTML = '';
 //   scores.forEach((score) => {
@@ -14,6 +13,5 @@ const displayData = (data) => {
 //   });
 //   if (scores.length > 5) { list.classList.add('scroll'); }
 };
-
 
 export default displayData;

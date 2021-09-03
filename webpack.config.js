@@ -27,15 +27,15 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
-      {    
+      {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        loader: "url-loader",
+        loader: 'url-loader',
         options: {
           publicPath: './src/fonts/',
           name: '../fonts/[name][ext]',
-          limit: 1000
-        }
-      }
+          limit: 1000,
+        },
+      },
     ],
   },
 };

@@ -1,4 +1,4 @@
-import displayData from "./displayData.js";
+import displayData from './displayData.js';
 
 const retrieveData = async (apiURL) => {
   await fetch(apiURL, {
