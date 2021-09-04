@@ -7,35 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Leaderboard</title>
+  <title>The Legend of Zelda Leaderboard</title>
 </head>
 
 <body>
   <header>
-    <h1>Leaderboard</h1>
+    <h1>Zelda Leaderboard</h1>
   </header>
   <div class="float-container">
     <div class="float-child">
       <h3>Recent Scores</h3>
-      <button id="refresh" class="btn btn-info">Refresh</button>
+      <button type="button" id="refresh" class="btn btn-info">Refresh</button>
       <!-- <br>
       <br>
       <br> -->
+      <img src="https://img.icons8.com/color-glass/96/ffffff/triforce.png" id="loading" alt="Loading Icon"/>
       <div class="leaderboardContainer">
         <ul class="list-group">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
         </ul>
       </div>
     </div>
     <div class="float-child">
       <h3>Add your Scores</h3>
-      <form>
-        <input class="form-control" placeholder="Your Name">
-        <input class="form-control" placeholder="Your Score">
+      <form class="highscoreInput">
+        <input class="form-control" name="player" type="text" placeholder="Your Name" required maxlength="30"/>
+        <input class="form-control" name="score" type="number" min="1" max="999"  placeholder="Your Score" required/>
         <button type="submit" id="submit" class="btn btn-info">Submit</button>
       </form>
     </div>
