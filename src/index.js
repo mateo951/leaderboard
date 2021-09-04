@@ -3,7 +3,7 @@ import setData from './modules/setData.js';
 import utilities from './modules/utilities.js';
 import retrieveData from './modules/retrieveData.js';
 
-const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/XGNkazNB33clDVzvSoIG/scores';
+const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/U7xnhWmJRA8gZn1OlaWA/scores';
 
 document.querySelector('#submit').addEventListener('click', () => {
   const values = document.querySelector('.highscoreInput');
@@ -20,8 +20,8 @@ document.querySelector('#refresh').addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   retrieveData(apiURL);
 });
-
-document.querySelector('.highscoreInput').querySelector('input[name="score"]').oninput = () => {
+// eslint-disable-next-line
+document.querySelector('.highscoreInput').querySelector('input[name="score"]').oninput = function() {
   if (this.value.length > 4) {
     this.value = this.value.slice(0, 4);
   }
