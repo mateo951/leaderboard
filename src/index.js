@@ -20,7 +20,7 @@ document.querySelector('#refresh').addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   retrieveData(apiURL);
 });
-
+// eslint-disable-next-line
 document.querySelector('.highscoreInput').querySelector('input[name="score"]').oninput = function() {
   if (this.value.length > 4) {
     this.value = this.value.slice(0, 4);
